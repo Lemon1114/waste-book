@@ -1,17 +1,16 @@
-
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Money from "@/views/Money.vue";
 import Tag from "@/views/Tag.vue";
 import Statistics from "@/views/Statistics.vue";
-
+import Notfound from "@/views/Notfound.vue";
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "home",
-    redirect:'/money',
+    redirect: "/money",
   },
   {
     path: "/money",
@@ -32,6 +31,11 @@ const routes: Array<RouteConfig> = [
     path: "/statistics",
     name: "statistics",
     component: Statistics,
+  },
+  {
+    path: "*",
+    name: "404",
+    component: Notfound,
   },
 ];
 

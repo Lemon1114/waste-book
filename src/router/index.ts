@@ -4,6 +4,7 @@ import Money from "@/views/Money.vue";
 import Tag from "@/views/Tag.vue";
 import Statistics from "@/views/Statistics.vue";
 import Notfound from "@/views/Notfound.vue";
+
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [

@@ -1,36 +1,20 @@
 <template>
   <nav>
     <router-link to="/money" class="item" active-class="selected">
-      <svg class="icon">
-        <use xlink:href="#icon-chart"></use>
-      </svg>
-
+      <Icon name="money_bag" />
       记账</router-link
     >
-    <router-link to="/label" class="item" active-class="selected"
-      ><svg class="icon">
-        <use xlink:href="#icon-chart"></use>
-      </svg>
+    <router-link to="/label" class="item" active-class="selected">
+      <Icon name="label" />
       标签</router-link
     >
-    <router-link to="/statistics" class="item" active-class="selected"
-      ><svg class="icon">
-        <use xlink:href="#icon-chart"></use>
-      </svg>
+    <router-link to="/statistics" class="item" active-class="selected">
+      <Icon name="chart" />
       统计</router-link
     >
   </nav>
 </template>
 <script lang="ts">
-import x from "@/assets/icons/chart.svg";
-// let importAll = (requireContext: __WebpackModuleApi.RequireContext) =>
-//   requireContext.keys().forEach(requireContext);
-// try {
-//   importAll(require.context("../assets/icons", true, /\.svg$/));
-// } catch (error) {
-//   console.log(error);
-// }
-console.log(x);
 export default {
   name: "Nav",
 };
@@ -54,7 +38,8 @@ nav {
     }
   }
   > .item.selected {
-    color: $color-highlight;
+    color: #fff;
+    background-color: $color-highlight;
   }
 }
 </style>

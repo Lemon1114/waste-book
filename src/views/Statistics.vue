@@ -1,14 +1,9 @@
 <template>
-  <div class="statistics">
-    statistics
-    <Nav/>
-  </div>
+  <Layout>statistics</Layout>
 </template>
 <script lang="ts">
 export default {
-  name:'statistics',
-}
+  name: "statistics",
+};
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

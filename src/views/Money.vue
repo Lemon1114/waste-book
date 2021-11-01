@@ -1,14 +1,15 @@
 <template>
-  <div class="money">
-  money
-  <Nav/>
-  </div>
+  <Layout
+    ><div class=""></div>
+    <div class="">
+      <input type="text" />
+    </div>
+    <div class="keyboards"></div
+  ></Layout>
 </template>
 <script lang="ts">
 export default {
-    name:'money',
-}
+  name: "money",
+};
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
